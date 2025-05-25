@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🎬 Serijanko
 
-## Getting Started
+**Serijanko** je moderna web aplikacija za pregled i pretragu TV serija, omogućujući korisnicima detaljan uvid u sadržaj poput opisa serije, epizoda i glumačke postave. Aplikacija također omogućava jednostavno dodavanje i uklanjanje serija s liste favorita. Performanse su optimizirane korištenjem Lighthouse alata.
 
-First, run the development server:
+🔗 **Link na aplikaciju:**  
+[https://next-serijanko.vercel.app/](https://next-serijanko.vercel.app/)
+
+---
+
+⚙️ Korištene tehnologije
+
+- Next.js
+- CSS Modules
+- Vercel (deploy)
+
+---
+
+✨ Funkcionalnosti
+
+- 🔎 Pretraga i pregled serija
+- 🎭 Prikaz glumačke postave i sažetaka epizoda
+- ⭐ Dodavanje serija u listu favorita
+- 📝 Uređivanje i brisanje favorita
+- 💾 Favoriti se trajno spremaju u `localStorage`
+- ⚡ Brzo, jednostavno i user-friendly sučelje
+- 🚀 Visoke performanse (testirano Lighthouse alatom)
+- ⏳ Custom loading stranica za bolje korisničko iskustvo
+- ❌ Not Found (404) stranica
+
+
+---
+
+🖥️ Lokalno pokretanje
 
 ```bash
+git clone https://github.com/M-Radan/next-serijanko.git
+cd next-serijanko
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🛠️ Build & Deploy
+```bash
+npm run build     
+npm run start  
+```   
+Deploy aplikacije je obavljen uz pomoć Vercel-a.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+🚧 Mogućnost nadogradnje: 
+Prikaz glumaca po epizodi
+Detaljni opisi i video najave serija
+Dodavanje slika/galerije
+Autentikacija korisnika (npr. login/registracija)
+Filtriranje po žanru (početna + favoriti)
+Pretraga po glumcu i prikaz svih njegovih serija/epizoda
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+❗ Poznate greške
+Aplikacija je testirana i trenutno nema poznatih grešaka.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
