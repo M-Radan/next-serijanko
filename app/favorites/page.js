@@ -1,3 +1,10 @@
+/*
+Stranica za prikaz omiljenih serija korisnika. Koristeći localStorage pohranu,
+omogućava pamćenje i prikaz serija koje su korisnici označili kao favorite.
+Omogućava jednostavno uklanjanje serija iz favorita i 
+prikazuje poruku i sliku u slučaju da nema spremljenih favorita.
+*/
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -6,6 +13,10 @@ import { useRouter } from "next/navigation";
 import styles from "./favorites.module.css"; 
 import BackButton from "../components/BackButton";
 
+/*
+Funkcija FavoritesPage omogućava prikaz favorita, učitava podatke iz localStorage-a,
+omogućava uklanjanje pojede serije iz liste favorita, automatski ažurira prikaz i pohranu.
+*/
 function FavoritesPage() {
   const [favorites, setFavorites] = useState([]);
   const route = useRouter();

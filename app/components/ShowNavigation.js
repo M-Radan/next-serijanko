@@ -1,8 +1,13 @@
+/* 
+Komponenta za navigacijski meni unutar detaljnog pregleda pojedine serije,
+omogućava korisnicima jednostavan pristup epizodama, glumcima, favorititima i povratak na prethodnu stranicu.
+*/
+
 "use client";
 import Link from "next/link";
 import styles from "./navigation.module.css";
 import BackButton from "./BackButton";
-import { useEffect, useState } from "react";
+
 
 
 function ShowNavigation({ showId }) {

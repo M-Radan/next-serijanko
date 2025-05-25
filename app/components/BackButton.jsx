@@ -1,3 +1,6 @@
+/* 
+Komponenta za povratak na prethodnu stranicu
+*/
 "use client";
 import styles from "./backBtn.module.css"
 import { useRouter } from "next/navigation";

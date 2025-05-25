@@ -1,11 +1,15 @@
+/*Stranica koja prikazuje detalje o pojedinoj seriji.
+Koristi ShowNavigation komponentu te FavoriteButton 
+Na jednostavan način prikazuje opis serije, status i žanr, te nudi mogućnost prikaza glumca, 
+radnje pojedine epizode, te dodavanja u favorite.*/
 import Image from "next/image";
 import FavoriteButton from "@/app/components/FavouriteButton";
 import ShowNavigation from "@/app/components/ShowNavigation";
 import styles from "./styles/details.module.css";
 
-export default async function ShowDetails({ params }) {
+async function ShowDetails({ params }) {
   const showId = params.id;
-
+  //ovdje koristimo cache: "no-store" zato što on osigurava najnovije podatke sa servera o pojedinim serijama
   const res = await fetch(`https://api.tvmaze.com/shows/${showId}`, { cache: "no-store" });
   if (!res.ok) {
     throw new Error("Nažalost serija nije pronađena");
@@ -45,3 +49,4 @@ export default async function ShowDetails({ params }) {
     </div>
   );
 }
+export default ShowDetails;

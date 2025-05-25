@@ -1,5 +1,8 @@
+/*
+Stranica not-found koja se prikazuje kada serija nije pronađena.
+*/
 import styles from './styles/notFound.module.css';
-export default function NotFound() {
+function NotFound() {
   return (
     <div className={styles.containerNotFound}>
       <h2>Serija nije pronađena ❌</h2>
@@ -7,3 +10,4 @@ export default function NotFound() {
     </div>
   );
 }
+export default NotFound;

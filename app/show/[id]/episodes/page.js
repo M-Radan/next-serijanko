@@ -1,3 +1,8 @@
+/* 
+Stranica koja prikaziva sve epizode pojedine serije.
+Na jednostavan način omogućava pregled svih epizoda, datuma emitiranja te kratkog opisa.
+*/
+
 "use client";
 
 import { use } from "react";

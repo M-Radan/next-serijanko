@@ -1,3 +1,9 @@
+/*
+Stranica koja prikazje popis svih glumaca serije.
+Na jednostavan način korištenjem API-ja tvmaze.com dohvaća sve glumce te njihove uloge.
+Na stranici se prikazuju slike glumaca, njihova imena te uloge koje su odigrali u seriji.
+*/
+
 import Image from "next/image";
 import BackButton from "@/app/components/BackButton";
 import styles from "./cast.module.css"; 

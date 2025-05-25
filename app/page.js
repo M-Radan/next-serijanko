@@ -1,5 +1,11 @@
-"use client";
 
+/* 
+Početna stranica aplikacije koja prikazuje sve serije
+Ova stranica korisnicima omogućeva pretragu serija po imenu, sortiranje po datumi premijere ili ocjeni, 
+pregled spremljenih favorita, te sam prikaz detalja pojedine serije.
+Također, omogućava učitavanje dodatnih serija klikom na gumb "Učitaj još serija".
+*/
+"use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
@@ -33,6 +39,11 @@ export default function Home() {
       return;
     }
 
+    /*
+    Korisnik unosi tekst pretrage u search input, zatim se tekst sprema u searchTerm state. Klikom na botun za 
+    pretragu pozivamo handleSearch koji šalje upit na `https://api.tvmaze.com/search/shows?q=${searchTerm}`
+    Zatim se rezultati pretrage prikazuju.
+    */
     const res = await fetch(`https://api.tvmaze.com/search/shows?q=${searchTerm}`);
     const data = await res.json();
     const extractedShows = data.map((item) => item.show);
@@ -42,6 +53,15 @@ export default function Home() {
     setSearchTerm("");
   };
 
+
+  /*
+  Funkcija za odabir sortiranja serija prema dva kriterija: najnovije i najbolje ocijenjene.
+  Kod prvog koristenja aplikacije, serije će automatski biti sortirane prema datumu premijere.
+  Funkcija koristi JavaScriptovu metodu sort() za sortiranje serija, ratinge i datume premijere postavlja 
+  na defaultne vrijednosti ako nisu dostupni.
+  Ako je serija bez ocjene, postavlja se na 0, a ako nema datuma premijere, koristi se defaultna vrijednost "1970-01-01".
+  Zatim se dohvaćaju stvarne vrijednosti te se uspoređuju, te ovisno o rezultatu usporedbe sortiraju.
+  */
   const sortedShows = [...shows].sort((a, b) => {
     if (sortOption === "najbolje") {
       let ratingFirst = 0;
@@ -81,7 +101,7 @@ export default function Home() {
           />
           <button onClick={handleSearch}>🔎</button>
           {isSearching && (
-            <button onClick={fetchAllShows} style={{ marginLeft: "10px" }}>
+            <button onClick={fetchAllShows} >
               Poništi pretragu ❌
             </button>
           )}
