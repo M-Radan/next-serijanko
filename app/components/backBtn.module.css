@@ -1,0 +1,17 @@
+
+.backBtn{
+    margin-right: 0.5rem;
+    text-decoration: none;
+     background-color: rgb(238, 240, 198);
+    color: black;
+    border: 1px solid gold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+.backBtn:hover{
+    background-color: #9e9242;
+    color: #050e84;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

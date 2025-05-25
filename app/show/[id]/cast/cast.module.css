@@ -1,0 +1,64 @@
+
+.container {
+
+    background-image: url('https://png.pngtree.com/png-clipart/20220602/original/pngtree-gold-stars-star-background-award-png-image_7852566.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    min-height: 700px;
+}
+.title{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+.castMemberList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.castBox {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.castBox:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    transition: box-shadow 0.3s;
+}
+
+.castPicture {
+    border-radius: 12px;
+    width: 100px;
+    height: 130px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+.castPicture:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.castBox p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+.castBox strong {
+    display: block;
+}
+
+.castBox em {
+    color: goldenrod;
+    font-style: normal;
+}
+

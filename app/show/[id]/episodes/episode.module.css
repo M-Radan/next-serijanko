@@ -1,0 +1,29 @@
+
+
+.container {
+  padding: 2rem;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/002/714/723/non_2x/gray-seamless-abstract-background-with-floral-elements-can-be-used-for-wallpaper-pattern-fills-web-page-surface-textures-textile-print-wrapping-paper-free-vector.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+.episodeList {
+  list-style: none;
+  padding: 2rem;
+  font-style: italic;
+}
+.title{
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+.episodeItem {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 20px; 
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);  
+  border: none;  
+}

@@ -1,0 +1,21 @@
+.preloader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.loader{
+    width: 100%;
+    max-width: 10rem;
+    height: 3rem;
+    background-image: url('/images/gifPreloader.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

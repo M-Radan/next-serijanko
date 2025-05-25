@@ -1,0 +1,71 @@
+.container {
+    max-width:1400px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.title{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.emptyMes {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5rem;
+    text-align: center;
+}
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    transform: scale(1.02);
+}
+
+.image {
+    border-radius: 6px;
+}
+.image:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    transform: scale(1.02);
+}
+
+.imageNotFound {
+    width: 150px;
+    height: 210px;
+    background-color: #eee;
+    border-radius: 6px;
+}
+
+
+.removeBtn {
+    background-color: rgb(230, 134, 134);
+    cursor: pointer;
+    color: red;
+    border-radius: 6px;
+    padding: 0.5rem;
+    border: 2px solid red;
+    text-align: center;
+}
+.removeBtn:hover {
+    background-color: rgb(218, 63, 63);
+    color: white;
+}

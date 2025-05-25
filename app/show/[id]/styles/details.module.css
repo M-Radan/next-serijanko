@@ -1,0 +1,37 @@
+
+.container {
+    padding: 1rem;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.image {
+    border-radius: 8px;
+}
+.image:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    transform: scale(1.02);
+}
+
+.summary {
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.favorite {
+    margin-top: 1rem;
+}
+
+.info {
+    margin-top: 1rem;
+    text-align: left;
+}
+.info2{
+    margin-top: 1rem;
+    text-align: left;
+}
+
